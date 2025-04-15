@@ -1,0 +1,37 @@
+{
+    "description": "TiddlyWiki Plugin Library",
+    "plugins": [
+        "tiddlywiki/filesystem",
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/pluginlibrary"
+    ],
+    "themes": [
+    	"tiddlywiki/vanilla"
+    ],
+    "build": {
+	"bundle": [
+		"--output", "./bundle",
+		"--render",
+            		"[plugin-type[plugin]prefix[$:/plugins/adte/base02]]",
+            		"[split[/]last[]addsuffix[.json]]",
+			"text/plain",
+            		"$:/core/templates/json-tiddler"
+        ],
+	"library": [
+		"--output", "./docs/library/",
+		"--makelibrary","$:/UpgradeLibrary",
+		"--savelibrarytiddlers",
+    	                "$:/UpgradeLibrary",
+            		"[prefix[$:/plugins/kookma/]] [[$:/plugins/tiddlywiki/pluginlibrary]] [[$:/plugins/tiddlywiki/markdown]]",
+            		"recipes/library/tiddlers/",
+            		"$:/UpgradeLibrary/List",
+		"--savetiddler",
+			"$:/UpgradeLibrary/List",
+			"recipes/library/tiddlers.json",
+		"--rendertiddler",
+			"$:/plugins/tiddlywiki/pluginlibrary/library.template.html", 
+			"index.html",
+			"text/plain"
+        ]
+    }
+}
