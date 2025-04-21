@@ -21,6 +21,25 @@ var assetList = [
         "requires-reload": "no"
     },
     {
+        "title": "$:/plugins/adte/tiddlymapx",
+        "version": "0.0.1",
+        "stability": "STABILITY_2_STABLE",
+        "name": "TiddlyMap Collection",
+        "description": "Installs all TiddlyMap require plugins",
+        "author": "jgouin",
+        "source": "",
+        "list": "readme",
+        "plugin-priority": "",
+        "parent-plugin": "",
+        "dependents": "$:/plugins/flibbles/vis-network $:/plugins/felixhayashi/tiddlymap $:/plugins/felixhayashi/hotzone $:/plugins/felixhayashi/topstoryview",
+        "plugin-type": "plugin",
+        "core-version": ">=5.1.23",
+        "packaged-by": "Gatha on 18th April 2025, 12:33:25",
+        "type": "application/json",
+        "readme": "This plugin allow me to quickly install the plugins that I always use:\n\n<$let qualified-state=<<qualify \"$:/state/plugin-info\">> >\n<$list filter=\"[[$:/plugins/adte/tiddlymapx]get[dependents]enlist-input[]]\" emptyMessage=<<lingo \"Empty/Hint\">>  template=\"$:/core/ui/Components/plugin-info\"/>\n</$let>",
+        "requires-reload": "no"
+    },
+    {
         "title": "$:/plugins/kookma/gatha",
         "version": "2.0.1",
         "stability": "STABILITY_2_STABLE",
