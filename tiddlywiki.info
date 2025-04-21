@@ -22,7 +22,7 @@
 		"--makelibrary","$:/UpgradeLibrary",
 		"--savelibrarytiddlers",
     	                "$:/UpgradeLibrary",
-            		"[prefix[$:/plugins/kookma/]] [[$:/plugins/tiddlywiki/pluginlibrary]] [[$:/plugins/tiddlywiki/markdown]]",
+            		"[prefix[$:/plugins/adte/]] [prefix[$:/plugins/kookma/]] [prefix[$:/plugins/felixhayashi/]] [prefix[$:/plugins/flibbles/]] [[$:/plugins/tiddlywiki/pluginlibrary]] [[$:/plugins/tiddlywiki/markdown]]",
             		"recipes/library/tiddlers/",
             		"$:/UpgradeLibrary/List",
 		"--savetiddler",
